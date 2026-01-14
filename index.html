@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASUKA CHEESE - HOKKAIDO MUKAWA</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind Play CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bg: '#FAF9F6',       // クリームホワイト
+                        main: '#2A4515',     // ディープフォレストグリーン
+                        text: '#333333',     // 墨色
+                        accent: '#9C7C38',   // アンティークゴールド
+                        point: '#800020',    // バーガンディ
+                        footer: '#1a1a1a',   // ダークチャコール
+                    },
+                    fontFamily: {
+                        mincho: ['"Shippori Mincho"', 'serif'],
+                        gothic: ['"Noto Sans JP"', 'sans-serif'],
+                        en: ['"Cormorant Garamond"', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Lenis for Smooth Scrolling -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="font-gothic text-text bg-bg antialiased">
+
+    <!-- ① Hero Section -->
+    <section class="relative w-full h-screen overflow-hidden flex items-center justify-center js-scroll-reveal">
+        <div class="relative w-[90%] h-[90%]">
+            <img src="images/asuka_top.png" alt="ASUKA ホールチーズ" class="w-full h-full object-contain" />
+            <div class="absolute bottom-10 right-10 text-white text-right z-10 opacity-80">
+                <p class="font-en italic text-xl">ASUKA CHEESE FROM HOKKAIDO MUKAWA</p>
+                <p class="font-en text-sm tracking-widest">Limited Edition Whole Cheese</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ② Intro Section -->
+    <section class="py-24 md:py-32 px-6 bg-bg js-scroll-reveal">
+        <div class="max-w-6xl mx-auto text-center md:text-left">
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-2/3 md:flex md:flex-col md:justify-start md:pl-4">
+                    <span class="font-en text-accent text-xl italic mb-4 block">The Value of Time</span>
+                    <p class="text-justify leading-loose mb-6 md:text-left">
+                        すぐに手に入るものではなく、6か月という熟成の時間そのものを含めた価値。
+                    </p>
+                    <p class="text-justify leading-loose mb-6 md:text-left">
+                        この商品は、ご購入後に製造を開始し、熟成を経て完成したホールチーズ5kgをお届けします。
+                    </p>
+                    <p class="text-justify leading-loose mb-6 md:text-left">
+                        選ぶのはチーズの量だけでなく、完成までの時間を待つという選択。
+                    </p>
+                    <p class="text-justify leading-loose mb-6 md:text-left">
+                        ゆっくりと仕上がった一つのかたちを、記念日や節目に受け取ることもできます。
+                    </p>
+                </div>
+                <div class="md:w-1/3 flex flex-row-reverse justify-center ">
+                    <h2
+                        class="font-mincho text-main text-3xl md:text-4xl leading-relaxed [writing-mode:vertical-rl] h-[40vh]">
+                        熟成のたびに、
+                    </h2>
+                    <h2
+                        class="font-mincho text-main text-3xl md:text-4xl leading-relaxed [writing-mode:vertical-rl] h-[40vh]">
+                        価値が重なっていく。
+                    </h2>
+                    <h2
+                        class="font-mincho text-main text-3xl md:text-4xl leading-relaxed [writing-mode:vertical-rl] h-[40vh] text-right">
+                        むかわ町から届く、
+                    </h2>
+                    <h2
+                        class="font-mincho text-main text-3xl md:text-4xl leading-relaxed [writing-mode:vertical-rl] h-[40vh] text-right">
+                        ホールチーズ。
+                    </h2>
+                </div>
+            </div>
+            <div class="mt-12 flex justify-center">
+                <img src="images/asuka01.png" alt="熟成イメージ" class="w-[80%] shadow-2xl rounded-sm" />
+            </div>
+        </div>
+    </section>
+
+    <!-- ③ Origin Section -->
+    <section class="py-24 bg-main text-[#FAF9F6] js-scroll-reveal">
+        <div class="max-w-[1400px] mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-10 gap-8 items-center">
+                <div class="lg:col-span-7 h-[400px] lg:h-[600px]">
+                    <img src="images/asuka03.jpg" alt="むかわ町の風景"
+                        class="w-full h-full object-cover rounded-sm brightness-90" />
+                </div>
+                <div class="lg:col-span-3 lg:pl-8 flex flex-col justify-center h-full">
+                    <span
+                        class="font-en text-accent text-2xl italic mb-4 block border-b border-accent/30 pb-2 w-max">The
+                        Origin</span>
+                    <h3 class="font-mincho text-2xl md:text-3xl mb-8 leading-normal text-bg">
+                        北海道の胆振地方、<br />太平洋に面した、<br />むかわ町の牧場から。
+                    </h3>
+                    <p class="text-sm md:text-base leading-loose opacity-90 text-justify font-light">
+                        北海道の胆振地方、太平洋に面したむかわ町。
+                    </p>
+                    <p class="text-sm md:text-base leading-loose opacity-90 text-justify font-light">
+                        山と海に囲まれたこの土地で、ASUKAチーズは小さな牧場からチーズづくりを行っています。
+                    </p>
+                    <p class="text-sm md:text-base leading-loose opacity-90 text-justify font-light">
+                        大切に育てた牛の生乳を使い、余計なものは加えず、素材と製法に正面から向き合う。
+                    </p>
+                    <p class="text-sm md:text-base leading-loose opacity-90 text-justify font-light">
+                        その姿勢を何よりも大切にしながら、ひとつひとつ丁寧に仕込み、時間をかけて熟成させています。
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-16 grid grid-cols-1 lg:grid-cols-10 gap-8 items-center">
+                <div class="lg:col-span-3 lg:pr-8 flex flex-col justify-center h-full">
+                    <span
+                        class="font-en text-accent text-2xl italic mb-4 block border-b border-accent/30 pb-2 w-max">The
+                        Farm</span>
+                    <h3 class="font-mincho text-2xl md:text-3xl mb-8 leading-normal text-bg">
+                        時間が育てる、<br />ホールチーズ。
+                    </h3>
+                    <p class="text-sm md:text-base leading-loose opacity-90 text-justify font-light">
+                        ホールで熟成させることで生まれる、奥行きのある香りと、ゆっくりとほどける食感。
+                    </p>
+                    <p class="text-sm md:text-base leading-loose opacity-90 text-justify font-light">
+                        切り分けるたびに表情を変え、食べ進める中で味わいが深まっていくのも、このサイズならではの魅力です。
+                    </p>
+                    <p class="text-sm md:text-base leading-loose opacity-90 text-justify font-light">
+                        むかわ町の静かな環境の中で育まれた、「時間そのものが価値になる」チーズを、ぜひ味わってみてください
+                    </p>
+                </div>
+                <div class="lg:col-span-7 h-[400px] lg:h-[600px]">
+                    <img src="images/asuka13.png" alt="牛舎の風景"
+                        class="w-full h-full object-cover rounded-sm brightness-90" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ④ Sticky Story Section -->
+    <section class="relative bg-bg">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+            <!-- Left: Fixed text and indicators -->
+            <div class="sticky top-0 h-screen flex flex-col justify-start px-8 lg:px-20 bg-bg py-24 z-30"
+                style="align-self: start;">
+                <span class="font-en text-accent text-xl italic mb-2">Our Story</span>
+                <h2 class="font-mincho text-main text-3xl md:text-4xl mb-8">こだわり抜いた<br />生産者の物語</h2>
+
+                <div class="space-y-6 relative mb-12 hidden lg:block">
+                    <!-- Step 1 -->
+                    <div class="step-trigger group cursor-pointer flex flex-col gap-4">
+                        <div class="flex items-center gap-6">
+                            <div class="h-12 w-[2px] bg-gray-300 relative overflow-hidden">
+                                <div class="step-indicator absolute top-0 left-0 w-full bg-accent transition-all duration-700 ease-out h-0"
+                                    style="transform-origin: top;"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl uppercase tracking-widest text-main font-mincho">01 / むかわ町の小さな牧場で
+                                </h3>
+                                <p class="step-text text-sm font-gothic transition-colors duration-700 text-gray-400">
+                                    太平洋に面したむかわ町、安心への想いから始まった場所</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="step-trigger group cursor-pointer flex flex-col gap-4">
+                        <div class="flex items-center gap-6">
+                            <div class="h-12 w-[2px] bg-gray-300 relative overflow-hidden">
+                                <div class="step-indicator absolute top-0 left-0 w-full bg-accent transition-all duration-700 ease-out h-0"
+                                    style="transform-origin: top;"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl uppercase tracking-widest text-main font-mincho">02 / 素材と向き合う手仕事</h3>
+                                <p class="step-text text-sm font-gothic transition-colors duration-700 text-gray-400">
+                                    自ら育てた牛の生乳で、効率よりも手間ひまを</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="step-trigger group cursor-pointer flex flex-col gap-4">
+                        <div class="flex items-center gap-6">
+                            <div class="h-12 w-[2px] bg-gray-300 relative overflow-hidden">
+                                <div class="step-indicator absolute top-0 left-0 w-full bg-accent transition-all duration-700 ease-out h-0"
+                                    style="transform-origin: top;"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-xl uppercase tracking-widest text-main font-mincho">03 / 育まれた豊かな時間</h3>
+                                <p class="step-text text-sm font-gothic transition-colors duration-700 text-gray-400">
+                                    半年の時を重ねて育つ、味わう時間の豊かさ</p>
+                            </div>
+                        </div>
+                        <div class="pl-[26px]">
+                            <img src="images/wholeCheeseBorder.png" alt="" aria-hidden="true"
+                                class="mt-1 w-40 h-auto" />
+                        </div>
+                    </div>
+                </div>
+
+                <p class="leading-loose text-justify text-text lg:hidden">
+                    ASUKAチーズは、北海道胆振地方・太平洋に面したむかわ町の小さな牧場で生まれました。
+                    代表の北川飛鳥氏は、「日々口にするものだからこそ、安心して食べられるものを、きちんと自分の手でつくりたい」という想いから、チーズづくりを始めました。
+                </p>
+            </div>
+
+            <!-- Right: Content and Images -->
+            <div class="bg-bg relative">
+                <!-- Sticky Image (Desktop) -->
+                <div class="sticky top-0 h-screen flex items-center justify-center hidden lg:flex z-10"
+                    style="align-self: start;">
+                    <div class="w-full h-full relative overflow-hidden bg-gray-100 rounded-sm">
+                        <div class="workflow-img absolute inset-0 transition-all duration-700 ease-out flex items-center justify-center opacity-0 scale-95 z-10"
+                            data-step="1">
+                            <img src="images/asuka002.png"
+                                class="absolute inset-0 w-full h-full object-cover brightness-90" />
+                            <div class="absolute inset-0 bg-black/20"></div>
+                        </div>
+                        <div class="workflow-img absolute inset-0 transition-all duration-700 ease-out flex items-center justify-center opacity-0 scale-95 z-10"
+                            data-step="2">
+                            <img src="images/asuka10.jpg"
+                                class="absolute inset-0 w-full h-full object-cover brightness-90" />
+                            <div class="absolute inset-0 bg-black/20"></div>
+                        </div>
+                        <div class="workflow-img absolute inset-0 transition-all duration-700 ease-out flex items-center justify-center opacity-0 scale-95 z-10"
+                            data-step="3">
+                            <img src="images/asuka07.jpg"
+                                class="absolute inset-0 w-full h-full object-cover brightness-90" />
+                            <div class="absolute inset-0 bg-black/20"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Scrolling Content -->
+                <div class="lg:w-full relative z-20">
+                    <div class="h-[20vh] hidden lg:block"></div>
+                    <div class="workflow-step-content min-h-[50vh] lg:min-h-[80vh] flex flex-col justify-center px-0 lg:px-20 py-12 lg:py-20"
+                        data-step="1">
+                        <span class="text-6xl text-gray-200 font-bold mb-6 font-mincho">01</span>
+                        <p class="text-base leading-loose text-justify text-text font-gothic mb-8">
+                            ASUKAチーズは、北海道胆振地方・太平洋に面したむかわ町の小さな牧場で生まれました。 <br>
+                            代表の北川飛鳥氏は、「日々口にするものだからこそ、安心して食べられるものを、きちんと自分の手でつくりたい」という想いから、チーズづくりを始めました。<br>
+                            この土地、この環境、そして作り手の姿勢があってこそ生まれる一品です。
+                        </p>
+                        <div class="lg:hidden w-full aspect-video bg-gray-100 rounded-sm overflow-hidden mb-8">
+                            <img src="images/asuka002.png" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                    <div class="workflow-step-content min-h-[50vh] lg:min-h-[80vh] flex flex-col justify-center px-0 lg:px-20 py-12 lg:py-20"
+                        data-step="2">
+                        <span class="text-6xl text-gray-200 font-bold mb-6 font-mincho">02</span>
+                        <p class="text-base leading-loose text-justify text-text font-gothic mb-8">
+                            使うのは、自ら大切に育てた牛の生乳。 原料・製法・熟成環境のひとつひとつに向き合い、<br><br>
+                            必要以上のことは加えず、素材そのものの力を引き出すことを大切にしています。 <br>
+                            効率や大量生産よりも、「時間をかけること」「手をかけること」を選び続けてきました。
+                        </p>
+                        <div class="lg:hidden w-full aspect-video bg-gray-100 rounded-sm overflow-hidden mb-8">
+                            <img src="images/asuka10.jpg" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                    <div class="workflow-step-content min-h-[50vh] lg:min-h-[80vh] flex flex-col justify-center px-0 lg:px-20 py-12 lg:py-20"
+                        data-step="3">
+                        <span class="text-6xl text-gray-200 font-bold mb-6 font-mincho">03</span>
+                        <p class="text-base leading-loose text-justify text-text font-gothic mb-8">
+                            ASUKAチーズのホールチーズは、完成までに約6か月の熟成期間を要します。<br>
+                            その時間は、ただ待つ時間ではなく、風味や食感が少しずつ育っていく、大切な工程です。 <br>
+                            切り分けながら味わう過程も含めて、チーズと向き合う時間そのものを楽しんでほしい。 むかわ町で育まれたチーズを通して、食べる時間の豊かさを感じていただけたら幸いです。
+                        </p>
+                        <div class="lg:hidden w-full aspect-video bg-gray-100 rounded-sm overflow-hidden mb-8">
+                            <img src="images/asuka07.jpg" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⑤ Product Section -->
+    <section class="py-24 bg-bg js-scroll-reveal">
+        <div class="max-w-[1400px] mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-mincho text-main text-3xl md:text-4xl tracking-widest">—— ここが特別 ——</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+                <!-- Item 1 -->
+                <div class="flex flex-col">
+                    <h3 class="font-mincho text-2xl md:text-3xl mb-6 text-main">熟成の時間も含めて受け取る</h3>
+                    <p class="text-base leading-loose text-justify text-text font-gothic mb-8 whitespace-pre-line">
+                        本商品は、ご購入後に製造を開始し、完成・発送までに約6か月のお時間をいただきます。
+                        熟成の時間そのものを価値と捉え、最適な状態に仕上げたチーズをお届けします。
+                        お届けは 最短で6月頃 を予定しています。
+                    </p>
+                    <div class="mt-auto">
+                        <div class="w-full aspect-[100/67] overflow-hidden rounded-sm shadow-lg">
+                            <img src="images/asuka08.jpg" alt="" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="flex flex-col">
+                    <h3 class="font-mincho text-2xl md:text-3xl mb-6 text-main">ホール5kgだからこそ生まれる価値</h3>
+                    <p class="text-base leading-loose text-justify text-text font-gothic mb-8 whitespace-pre-line">
+                        切り分ける工程や、食べ進める中で変化していく味わいまで含めて楽しめるサイズ。
+                        個人での特別な一品としてはもちろん、店舗や場で分かち合う用途にも適しています。
+                    </p>
+                    <div class="mt-auto">
+                        <div class="w-full aspect-[100/67] overflow-hidden rounded-sm shadow-lg">
+                            <img src="images/asuka06.jpg" alt="" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="flex flex-col">
+                    <h3 class="font-mincho text-2xl md:text-3xl mb-6 text-main">注文後に製造を開始</h3>
+                    <p class="text-base leading-loose text-justify text-text font-gothic mb-8 whitespace-pre-line">
+                        在庫販売ではなく、購入確定後に一つひとつ製造。
+                        少量生産・個別管理を前提とし、品質を最優先にしたものづくりを行っています。
+                    </p>
+                    <div class="mt-auto">
+                        <div class="w-full aspect-[100/67] overflow-hidden rounded-sm shadow-lg">
+                            <img src="images/asuka003.png" alt="" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="flex flex-col">
+                    <h3 class="font-mincho text-2xl md:text-3xl mb-6 text-main">数量限定5点</h3>
+                    <p class="text-base leading-loose text-justify text-text font-gothic mb-8 whitespace-pre-line">
+                        製造・熟成・保管における品質管理の観点から、販売数は 限定5点。
+                        一つひとつにしっかりと向き合うための数量設定です。
+                    </p>
+                    <div class="mt-auto">
+                        <div class="w-full aspect-[100/67] overflow-hidden rounded-sm shadow-lg">
+                            <img src="images/asuka07.jpg" alt="" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⑥ Scarcity Section -->
+    <section class="py-24 bg-white js-scroll-reveal">
+        <div class="max-w-3xl mx-auto px-6">
+            <div class="border-2 border-accent p-8 md:p-12 relative">
+                <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-white px-6">
+                    <h2 class="font-mincho text-main text-2xl">商品スペック・限定情報</h2>
+                </div>
+                <ul class="space-y-8 mt-4">
+                    <li class="flex flex-col md:flex-row gap-4 md:items-baseline border-b border-gray-100 pb-6">
+                        <span class="font-bold text-main w-40 shrink-0">お届け時期</span>
+                        <div>
+                            <p class="font-bold text-lg">熟成の時間も含めて受け取る</p>
+                            <p class="text-sm text-gray-600 mt-1">
+                                ご購入後に製造を開始し、完成・発送までに約6か月。最短で6月頃のお届けを予定しています。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex flex-col md:flex-row gap-4 md:items-baseline border-b border-gray-100 pb-6">
+                        <span class="font-bold text-main w-40 shrink-0">製造方針</span>
+                        <div>
+                            <p class="font-bold text-lg">注文後に製造を開始</p>
+                            <p class="text-sm text-gray-600 mt-1">
+                                在庫販売ではなく、完全受注生産。少量生産・個別管理を前提としています。
+                            </p>
+                        </div>
+                    </li>
+                    <li class="flex flex-col md:flex-row gap-4 md:items-center">
+                        <span class="font-bold text-point w-40 shrink-0">数量限定</span>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-4">
+                                <span class="text-3xl font-en text-point font-bold">Limit 5</span>
+                                <p class="text-sm text-gray-600">品質管理の観点から、販売数は限定5点のみ。</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ⑦ Footer Section -->
+    <footer class="bg-main text-gray-400 py-16 px-6 js-scroll-reveal">
+        <div class="max-w-4xl mx-auto text-center space-y-10">
+            <div class="mb-12">
+                <h3 class="text-white font-mincho text-xl mb-4">TOKKENを通じた地域とのつながり</h3>
+                <p class="text-sm leading-relaxed max-w-2xl mx-auto">
+                    本商品は、TOKKENを通じて地域事業者と連携し、地域に根ざした価値を「権利」として可視化する取り組みの一環です。
+                    単なる購入にとどまらず、地域と長くつながる関係づくりを前提としています。
+                </p>
+            </div>
+            <div class="py-8">
+                <button
+                    class="bg-accent hover:bg-[#8a6d30] text-white font-mincho text-lg px-12 py-4 rounded-sm transition-all shadow-lg hover:shadow-accent/40 tracking-widest">
+                    「時を贈る」ホールチーズを購入する
+                </button>
+                <p class="mt-4 text-xs font-en tracking-widest opacity-60">LIMITED 5 ITEMS ONLY</p>
+            </div>
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; ASUKA CHEESE. All Rights Reserved.</p>
+                <div class="mt-4 md:mt-0 space-x-6">
+                    <a href="#" class="hover:text-white transition">特定商取引法に基づく表記</a>
+                    <a href="#" class="hover:text-white transition">プライバシーポリシー</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
