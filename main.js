@@ -33,6 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const stepTexts = document.querySelectorAll('.step-text');
     const workflowImages = document.querySelectorAll('.workflow-img');
 
+    // Initialize first image to be visible immediately
+    updateStickyUI('1');
+
     const stepObserver = new IntersectionObserver(
         (entries) => {
             entries.forEach((entry) => {
