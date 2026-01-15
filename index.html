@@ -5,6 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASUKA CHEESE - HOKKAIDO MUKAWA</title>
+    <meta name="description" content="北海道むかわ町から届く、6ヶ月熟成のホールチーズ。時間をかけて育まれた価値を、限定5点でお届けします。" />
+
+    <!-- OGP -->
+    <meta property="og:title" content="ASUKA CHEESE - HOKKAIDO MUKAWA" />
+    <meta property="og:description" content="北海道むかわ町から届く、6ヶ月熟成のホールチーズ。時間をかけて育まれた価値を、限定5点でお届けします。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/asuka_top.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,16 +56,94 @@
 
     <!-- ① Hero Section -->
     <section
-        class="relative w-full h-[30vh] md:h-[70vh] md:h-screen overflow-hidden flex items-center justify-center js-scroll-reveal">
+        class="relative w-full h-[50vh] md:h-screen overflow-hidden flex items-center justify-center js-scroll-reveal">
         <div class="relative w-[90%] h-[90%]">
-            <img src="images/asuka_top.jpg" alt="ASUKA ホールチーズ" class="w-full h-full object-contain" />
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/asuka_top_sp.png">
+                <img src="images/asuka_top.jpg" alt="ASUKA ホールチーズ" class="w-full h-full object-contain" />
+            </picture>
             <div class="absolute bottom-10 right-10 text-white text-right z-10 opacity-80">
             </div>
         </div>
     </section>
 
+    <!-- NEW: はじめのチーズについて Section -->
+    <section class="py-16 md:py-24 px-6 bg-bg js-scroll-reveal">
+        <div class="max-w-5xl mx-auto">
+            <!-- メインタイトル -->
+            <div class="text-center mb-12 md:mb-16">
+                <span class="font-en text-accent text-xl italic mb-4 block">About the Cheese</span>
+                <h2 class="font-mincho text-main text-3xl md:text-4xl tracking-wide">はじめのチーズについて</h2>
+            </div>
+
+            <!-- 説明文 -->
+            <div class="mb-16 md:mb-20">
+                <p class="text-base md:text-lg leading-loose text-justify text-text font-gothic max-w-3xl mx-auto">
+                    「はじめのチーズ」は、ヨーロッパで農家が日常的に作ってきた小型チーズ「トム」をモデルに生まれたチーズです。ASUKA（アスカ）のチーズ工房を代表する、長く愛され続けている定番のチーズです。
+                </p>
+            </div>
+
+            <!-- チーズ画像 -->
+            <div class="mb-16 md:mb-20 flex justify-center">
+                <img src="images/asuka003.png" alt="はじめのチーズ" class="w-full max-w-2xl shadow-xl rounded-sm" loading="lazy" decoding="async" />
+            </div>
+
+            <!-- 特徴セクション -->
+            <div class="space-y-16 md:space-y-20">
+                <!-- 特徴1: カビが育てる、熟成の味わい -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                    <div class="md:col-span-2 flex items-center justify-center md:justify-start">
+                        <span class="font-en text-6xl md:text-7xl text-accent/20 font-bold">01</span>
+                    </div>
+                    <div class="md:col-span-10">
+                        <h3 class="font-mincho text-xl md:text-2xl text-main mb-4 border-l-4 border-accent pl-4">カビが育てる、熟成の味わい</h3>
+                        <p class="text-base leading-loose text-justify text-text font-gothic">
+                            表面をグレーのカビで覆ったこのチーズは、ナッツを思わせる香ばしい香りが特徴です。表面のカビを丁寧に磨きながら、約6か月間、乳酸菌の力を借りてじっくりと熟成させています。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 特徴2: カビと乳酸菌の共生 -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                    <div class="md:col-span-2 flex items-center justify-center md:justify-start">
+                        <span class="font-en text-6xl md:text-7xl text-accent/20 font-bold">02</span>
+                    </div>
+                    <div class="md:col-span-10">
+                        <h3 class="font-mincho text-xl md:text-2xl text-main mb-4 border-l-4 border-accent pl-4">カビと乳酸菌の共生</h3>
+                        <p class="text-base leading-loose text-justify text-text font-gothic">
+                            乳酸菌は、空気に触れるのがあまり得意ではない微生物です。チーズの表面に育つカビが酸素を消費することで、乳酸菌は快適な環境で増え、チーズを内側から熟成させていきます。一方で、カビは乳酸菌が生み出す乳酸を栄養として成長します。こうして、カビと乳酸菌が支え合いながら、ゆっくりと味わいが深まっていきます。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 特徴3: ホールだからこそ守られる品質 -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                    <div class="md:col-span-2 flex items-center justify-center md:justify-start">
+                        <span class="font-en text-6xl md:text-7xl text-accent/20 font-bold">03</span>
+                    </div>
+                    <div class="md:col-span-10">
+                        <h3 class="font-mincho text-xl md:text-2xl text-main mb-4 border-l-4 border-accent pl-4">ホールだからこそ守られる品質</h3>
+                        <p class="text-base leading-loose text-justify text-text font-gothic">
+                            このチーズは、カビと乳酸菌が共生する「ホールチーズ」です。ホールのまま熟成させることで、チーズ全体が安定した状態で育ちます。一度カットすると断面が空気に触れ、そこから乾燥や風味の劣化が始まります。市販のカットチーズでは、真空パックや脱酸素剤によって断面を空気から守る必要があります。ホールで受け取り、切り分ける。その瞬間まで、チーズ本来の状態を保てることも、この商品の大きな価値のひとつです。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 購入ボタン -->
+            <div class="mt-16 md:mt-20 text-center">
+                <a href="#" role="button"
+                    class="inline-block bg-accent hover:bg-[#8a6d30] text-white font-mincho text-lg px-12 py-4 rounded-sm transition-all shadow-lg hover:shadow-accent/40 tracking-widest"
+                    aria-label="はじめのチーズを購入する">
+                    はじめのチーズを購入する
+                </a>
+                <p class="mt-4 text-xs font-en tracking-widest text-accent/60">LIMITED 5 ITEMS ONLY</p>
+            </div>
+        </div>
+    </section>
+
     <!-- ② Intro Section -->
-    <section class="py-12 md:py-32 px-6 bg-bg js-scroll-reveal">
+    <section class="py-6 md:py-32 px-6 bg-bg js-scroll-reveal">
         <div class="max-w-6xl mx-auto text-center md:text-left">
             <div class="flex flex-col md:flex-row gap-12">
                 <div class="md:w-2/3 md:flex md:flex-col md:justify-start md:pl-4">
@@ -95,7 +181,7 @@
                 </div>
             </div>
             <div class="mt-12 flex justify-center">
-                <img src="images/asuka01.png" alt="熟成イメージ" class="w-[80%] shadow-2xl rounded-sm" />
+                <img src="images/asuka01.png" alt="熟成イメージ" class="w-[80%] shadow-2xl rounded-sm" loading="lazy" decoding="async" />
             </div>
         </div>
     </section>
@@ -106,7 +192,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-10 gap-8 items-center">
                 <div class="lg:col-span-7 h-[400px] lg:h-[600px]">
                     <img src="images/asuka03.jpg" alt="むかわ町の風景"
-                        class="w-full h-full object-cover rounded-sm brightness-90" />
+                        class="w-full h-full object-cover rounded-sm brightness-90" loading="lazy" decoding="async" />
                 </div>
                 <div class="lg:col-span-3 lg:pl-8 flex flex-col justify-center h-full">
                     <span
@@ -148,7 +234,7 @@
                 </div>
                 <div class="lg:col-span-7 h-[400px] lg:h-[600px]">
                     <img src="images/asuka07.jpg" alt="牛舎の風景"
-                        class="w-full h-full object-cover rounded-sm brightness-90" />
+                        class="w-full h-full object-cover rounded-sm brightness-90" loading="lazy" decoding="async" />
                 </div>
             </div>
         </div>
@@ -208,7 +294,7 @@
                         </div>
                         <div class="pl-[26px]">
                             <img src="images/wholeCheeseBorder.png" alt="" aria-hidden="true"
-                                class="mt-1 w-40 h-auto" />
+                                class="mt-1 w-40 h-auto" loading="lazy" decoding="async" />
                         </div>
                     </div>
                 </div>
@@ -217,6 +303,16 @@
                     ASUKAチーズは、北海道胆振地方・太平洋に面したむかわ町の小さな牧場で生まれました。
                     代表の北川飛鳥氏は、「日々口にするものだからこそ、安心して食べられるものを、きちんと自分の手でつくりたい」という想いから、チーズづくりを始めました。
                 </p>
+
+                <!-- 購入ボタン -->
+                <div class="mt-8 lg:mt-auto hidden lg:block">
+                    <a href="#" role="button"
+                        class="inline-block bg-accent hover:bg-[#8a6d30] text-white font-mincho text-lg px-10 py-4 rounded-sm transition-all shadow-lg hover:shadow-accent/40 tracking-widest"
+                        aria-label="はじめのチーズを購入する">
+                        はじめのチーズを購入する
+                    </a>
+                    <p class="mt-4 text-xs font-en tracking-widest text-accent/60">LIMITED 5 ITEMS ONLY</p>
+                </div>
             </div>
 
             <!-- Right: Content and Images -->
@@ -227,20 +323,20 @@
                     <div class="w-full h-full relative overflow-hidden bg-gray-100 rounded-sm">
                         <div class="workflow-img absolute inset-0 transition-all duration-700 ease-out flex items-center justify-center opacity-0 scale-95 z-10"
                             data-step="1">
-                            <img src="images/asuka002.png"
-                                class="absolute inset-0 w-full h-full object-cover brightness-90" />
+                            <img src="images/asuka002.png" alt="むかわ町の牧場風景"
+                                class="absolute inset-0 w-full h-full object-cover brightness-90" loading="lazy" decoding="async" />
                             <div class="absolute inset-0 bg-black/20"></div>
                         </div>
                         <div class="workflow-img absolute inset-0 transition-all duration-700 ease-out flex items-center justify-center opacity-0 scale-95 z-10"
                             data-step="2">
-                            <img src="images/asuka10.jpg"
-                                class="absolute inset-0 w-full h-full object-cover brightness-90" />
+                            <img src="images/asuka10.jpg" alt="チーズ製造の様子"
+                                class="absolute inset-0 w-full h-full object-cover brightness-90" loading="lazy" decoding="async" />
                             <div class="absolute inset-0 bg-black/20"></div>
                         </div>
                         <div class="workflow-img absolute inset-0 transition-all duration-700 ease-out flex items-center justify-center opacity-0 scale-95 z-10"
                             data-step="3">
-                            <img src="images/asuka07.jpg"
-                                class="absolute inset-0 w-full h-full object-cover brightness-90" />
+                            <img src="images/asuka07.jpg" alt="熟成されたチーズ"
+                                class="absolute inset-0 w-full h-full object-cover brightness-90" loading="lazy" decoding="async" />
                             <div class="absolute inset-0 bg-black/20"></div>
                         </div>
                     </div>
@@ -249,7 +345,7 @@
                 <!-- Scrolling Content -->
                 <div class="lg:w-full relative z-20 px-8">
                     <div class="h-[20vh] hidden lg:block"></div>
-                    <div class="workflow-step-content min-h-[50vh] lg:min-h-[80vh] flex flex-col justify-center px-0 lg:px-20 py-12 lg:py-20"
+                    <div class="workflow-step-content min-h-[50vh] lg:min-h-[80vh] flex flex-col justify-center px-0 lg:px-20 py-6 lg:py-20"
                         data-step="1">
                         <span class="text-6xl text-gray-200 font-bold mb-6 font-mincho">01</span>
                         <p class="text-base leading-loose text-justify md:text-gray-200 text-text font-gothic mb-8">
@@ -258,10 +354,10 @@
                             この土地、この環境、そして作り手の姿勢があってこそ生まれる一品です。
                         </p>
                         <div class="lg:hidden w-full aspect-video bg-gray-100 rounded-sm overflow-hidden mb-8">
-                            <img src="images/asuka002.png" class="w-full h-full object-cover" />
+                            <img src="images/asuka002.png" alt="むかわ町の牧場風景" class="w-full h-full object-cover" loading="lazy" decoding="async" />
                         </div>
                     </div>
-                    <div class="workflow-step-content min-h-[50vh] lg:min-h-[80vh] flex flex-col justify-center px-0 lg:px-20 py-12 lg:py-20"
+                    <div class="workflow-step-content min-h-[50vh] lg:min-h-[80vh] flex flex-col justify-center px-0 lg:px-20 py-6 lg:py-20"
                         data-step="2">
                         <span class="text-6xl text-gray-200 font-bold mb-6 font-mincho">02</span>
                         <p class="text-base leading-loose text-justify md:text-gray-200 text-text font-gothic mb-8">
@@ -270,10 +366,10 @@
                             効率や大量生産よりも、「時間をかけること」「手をかけること」を選び続けてきました。
                         </p>
                         <div class="lg:hidden w-full aspect-video bg-gray-100 rounded-sm overflow-hidden mb-8">
-                            <img src="images/asuka10.jpg" class="w-full h-full object-cover" />
+                            <img src="images/asuka10.jpg" alt="チーズ製造の様子" class="w-full h-full object-cover" loading="lazy" decoding="async" />
                         </div>
                     </div>
-                    <div class="workflow-step-content min-h-[50vh] lg:min-h-[80vh] flex flex-col justify-center px-10 lg:px-20 py-12 lg:py-20"
+                    <div class="workflow-step-content min-h-[50vh] lg:min-h-[80vh] flex flex-col justify-center px-00 lg:px-20 py-6 lg:py-20"
                         data-step="3">
                         <span class="text-6xl text-gray-200 font-bold mb-6 font-mincho">03</span>
                         <p class="text-base leading-loose text-justify md:text-gray-200 text-text font-gothic mb-8">
@@ -282,7 +378,17 @@
                             切り分けながら味わう過程も含めて、チーズと向き合う時間そのものを楽しんでほしい。 むかわ町で育まれたチーズを通して、食べる時間の豊かさを感じていただけたら幸いです。
                         </p>
                         <div class="lg:hidden w-full aspect-video bg-gray-100 rounded-sm overflow-hidden mb-8">
-                            <img src="images/asuka05.jpg" class="w-full h-full object-cover" />
+                            <img src="images/asuka05.jpg" alt="熟成されたホールチーズ" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+                        </div>
+
+                        <!-- 購入ボタン（モバイル用） -->
+                        <div class="py-8 text-center lg:hidden">
+                            <a href="#" role="button"
+                                class="inline-block bg-accent hover:bg-[#8a6d30] text-white font-mincho text-lg px-12 py-4 rounded-sm transition-all shadow-lg hover:shadow-accent/40 tracking-widest"
+                                aria-label="はじめのチーズを購入する">
+                                はじめのチーズを購入する
+                            </a>
+                            <p class="mt-4 text-xs font-en tracking-widest text-accent/60">LIMITED 5 ITEMS ONLY</p>
                         </div>
                     </div>
                 </div>
@@ -307,7 +413,7 @@
                     </p>
                     <div class="mt-auto">
                         <div class="w-full aspect-[100/67] overflow-hidden rounded-sm shadow-lg">
-                            <img src="images/asuka08.jpg" alt="" class="w-full h-full object-cover" />
+                            <img src="images/asuka08.jpg" alt="熟成中のチーズ" class="w-full h-full object-cover" loading="lazy" decoding="async" />
                         </div>
                     </div>
                 </div>
@@ -320,7 +426,7 @@
                     </p>
                     <div class="mt-auto">
                         <div class="w-full aspect-[100/67] overflow-hidden rounded-sm shadow-lg">
-                            <img src="images/asuka06.jpg" alt="" class="w-full h-full object-cover" />
+                            <img src="images/asuka06.jpg" alt="ホールチーズ5kg" class="w-full h-full object-cover" loading="lazy" decoding="async" />
                         </div>
                     </div>
                 </div>
@@ -333,7 +439,7 @@
                     </p>
                     <div class="mt-auto">
                         <div class="w-full aspect-[100/67] overflow-hidden rounded-sm shadow-lg">
-                            <img src="images/asuka003.png" alt="" class="w-full h-full object-cover" />
+                            <img src="images/asuka003.png" alt="チーズ製造工程" class="w-full h-full object-cover" loading="lazy" decoding="async" />
                         </div>
                     </div>
                 </div>
@@ -346,7 +452,7 @@
                     </p>
                     <div class="mt-auto">
                         <div class="w-full aspect-[100/67] overflow-hidden rounded-sm shadow-lg">
-                            <img src="images/asuka07.jpg" alt="" class="w-full h-full object-cover" />
+                            <img src="images/asuka07.jpg" alt="限定チーズ" class="w-full h-full object-cover" loading="lazy" decoding="async" />
                         </div>
                     </div>
                 </div>
@@ -365,18 +471,12 @@
                 </p>
             </div>
             <div class="py-8">
-                <button
-                    class="bg-accent hover:bg-[#8a6d30] text-white font-mincho text-lg px-12 py-4 rounded-sm transition-all shadow-lg hover:shadow-accent/40 tracking-widest">
+                <a href="#" role="button"
+                    class="inline-block bg-accent hover:bg-[#8a6d30] text-white font-mincho text-lg px-12 py-4 rounded-sm transition-all shadow-lg hover:shadow-accent/40 tracking-widest"
+                    aria-label="ASUKAチーズを購入する">
                     はじめのチーズを購入する
-                </button>
+                </a>
                 <p class="mt-4 text-xs font-en tracking-widest opacity-60">LIMITED 5 ITEMS ONLY</p>
-            </div>
-            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
-                <p>&copy; ASUKA CHEESE. All Rights Reserved.</p>
-                <div class="mt-4 md:mt-0 space-x-6">
-                    <a href="#" class="hover:text-white transition">特定商取引法に基づく表記</a>
-                    <a href="#" class="hover:text-white transition">プライバシーポリシー</a>
-                </div>
             </div>
         </div>
     </footer>
